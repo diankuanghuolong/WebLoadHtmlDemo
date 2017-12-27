@@ -41,7 +41,7 @@
 #pragma mark ===== action  =====
 -(void)showInWebVC
 {
-     NSString *htmlStr = @"<!doctypehtml><html><head><metacharset='utf-8'/></head><body><p>&nbsp;&nbsp;&nbsp;&nbsp;唯有工作，能使我快乐。<br><p>&nbsp;&nbsp;&nbsp;&nbsp;为了防止世界给破坏。<br><h3>为了维护宇宙的和平</h3><br><p><br>、矫正饮食<br><p>&nbsp;&nbsp;&nbsp;&nbsp;逍遥之人爱逍遥，任他千枷百锁，我自狂歌依旧。<br></p><body></html>";
+     NSString *htmlStr = @"<!doctypehtml><html><head><metacharset='utf-8'/></head><body><p>&nbsp;&nbsp;&nbsp;&nbsp;唯有工作，能使我快乐。<br><p>&nbsp;&nbsp;&nbsp;&nbsp;为了防止世界给破坏，为了维护宇宙的和平</h3><br><p><br>一：<br><p>&nbsp;&nbsp;&nbsp;&nbsp;逍遥之人爱逍遥，任他千枷百锁，我自狂歌依旧。<br></p><body></html>";
         AgreementWebVC *agreeVC = [AgreementWebVC new];
         agreeVC.fileName = @"hai";
 //        agreeVC.htmlStr = htmlStr;
@@ -49,7 +49,7 @@
 }
 -(void)showInView
 {
-     NSString *htmlStr = @"<!doctypehtml><html><head><metacharset='utf-8'/></head><body><p>&nbsp;&nbsp;&nbsp;&nbsp;唯有工作，能使我快乐。<br><p>&nbsp;&nbsp;&nbsp;&nbsp;为了防止世界给破坏。<br><h3>为了维护宇宙的和平</h3><br><p><br>、矫正饮食<br><p>&nbsp;&nbsp;&nbsp;&nbsp;逍遥之人爱逍遥，任他千枷百锁，我自狂歌依旧。<br></p><body></html>";
+     NSString *htmlStr = @"<!doctypehtml><html><head><metacharset='utf-8'/></head><body><p>&nbsp;&nbsp;&nbsp;&nbsp;唯有工作，能使我快乐。<br><p>&nbsp;&nbsp;&nbsp;&nbsp;为了防止世界给破坏，为了维护宇宙的和平</h3><br><p><br>一：<br><p>&nbsp;&nbsp;&nbsp;&nbsp;逍遥之人爱逍遥，任他千枷百锁，我自狂歌依旧。<br></p><body></html>";
     AgreementView *agreView = [[AgreementView alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight, SCREEN_WIDTH, SCREEN_HEIGHT -SafeAreaTopHeight - SafeAreaBottomHeight) withFileName:nil withHtmlStr:htmlStr];
     [self.view addSubview:agreView];
 
